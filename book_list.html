@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CYAB Library | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Navbar */
+        header {
+            background-color: #1e88e5;
+            padding: 15px 50px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        nav a {
+            color: white;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+        /* Main content - centered logo */
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f7fa;
+            padding: 20px;
+            position: relative;
+        }
+        /* Logo image */
+        .logo-image {
+            max-width: 400px;
+            width: 80vw;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            border-radius: 15px;
+        }
+        /* Optional text below logo */
+        .welcome-text {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            font-weight: 600;
+            letter-spacing: 1.1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CYAB Library</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="images/cyab_logo_background.png" alt="CYAB Library Logo" class="logo-image" />
+        <div class="welcome-text">Welcome to CYAB Library</div>
+    </main>
+
+</body>
+</html>
